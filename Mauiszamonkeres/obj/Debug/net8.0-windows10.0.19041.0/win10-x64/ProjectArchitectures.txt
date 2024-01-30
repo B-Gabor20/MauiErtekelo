@@ -1,0 +1,1 @@
+C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\Mauiszamonkeres.csproj;x64
