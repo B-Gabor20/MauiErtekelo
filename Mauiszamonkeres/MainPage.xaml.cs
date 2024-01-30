@@ -48,7 +48,7 @@
                 sikereslogin = false;
                 beirtfelhasznalo = "Vendég";
                 await Shell.Current.GoToAsync("ListPage");
-                await DisplayAlert("Alert", "Nem sikerült belépni, vendég lettél xd", "OK");
+                await DisplayAlert("Alert", "Nem sikerült belépni, vendégként lett belépve", "OK");
             }
         }
     }

@@ -87,7 +87,7 @@ public partial class ListPage : ContentPage
         else
         {
             BtnMent.IsVisible = false;
-            await DisplayAlert("Alert", "NU UHH, LÉPJ BE", "OK");
+            await DisplayAlert("Alert", "Vendégeknek nem elérhetõ funkció", "OK");
         }
     }
     private async void BtnBetolt_Clicked(object sender, EventArgs e)
@@ -100,7 +100,7 @@ public partial class ListPage : ContentPage
         else
         {
             BtnMent.IsVisible = false;
-            await DisplayAlert("Alert", "NU UHH, LÉPJ BE", "OK");
+            await DisplayAlert("Alert", "Vendégeknek nem elérhetõ funkció", "OK");
         }
     }
 }
