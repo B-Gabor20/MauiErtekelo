@@ -9,6 +9,10 @@ public partial class ListPage : ContentPage
         try
         {
             var docsDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            if (!Directory.Exists(docsDirectory))
+            {
+                Directory.CreateDirectory(docsDirectory);
+            }
             File.WriteAllLines($"{docsDirectory}/adat.txt", list);
         }
         catch (Exception ex)
@@ -38,22 +42,45 @@ public partial class ListPage : ContentPage
         {
             felh.Text = "Üdvözöljük Vendég";
         }
-        
-         
 	}
-    private async void BackBtn_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("..");
-    }
     private async void BtnFelvitel_Clicked(object sender, EventArgs e)
     {
         list.Add(EtrBe.Text);
         LwAdatok.ItemsSource = list;
 
     }
+    private async void BtnBeszur_Clicked(object sender, EventArgs e)
+    {
+        if (LwAdatok.SelectedItem == null)
+        {
+            await DisplayAlert("Hiba", "Nincs kijelölve elem!", "OK");
+            return;
+        }
+        string kivalitem = LwAdatok.SelectedItem.ToString();
+        int poz = list.IndexOf(kivalitem);
+        list.Insert(poz, EtrBe.Text);
+        LwAdatok.ItemsSource = list;
+    }
+    private async void BtnKijeloltTorol_Clicked(object sender, EventArgs e)
+    {
+        if (LwAdatok.SelectedItem == null)
+        {
+            await DisplayAlert("Hiba", "Nincs kijelölve elem!", "OK");
+            return;
+        }
+        string torolhetoitem = LwAdatok.SelectedItem.ToString();
+        list.Remove(torolhetoitem);
+        LwAdatok.ItemsSource = list;
+    }
+    private async void BtnTeljesTorol_Clicked(object sender, EventArgs e)
+    {
+        list.Clear();
+        LwAdatok.ItemsSource = list;
+    }
+    
     private async void BtnMent_Clicked(object sender, EventArgs e)
     {
-        if(MainPage.sikereslogin ==  true)
+        if (MainPage.sikereslogin == true)
         {
             SaveMauiAsset();
         }
@@ -75,23 +102,5 @@ public partial class ListPage : ContentPage
             BtnMent.IsVisible = false;
             await DisplayAlert("Alert", "NU UHH, LÉPJ BE", "OK");
         }
-    }
-    private async void BtnKijeloltTorol_Clicked(object sender, EventArgs e)
-    {
-        string torolhetoitem = LwAdatok.SelectedItem.ToString();
-        list.Remove(torolhetoitem);
-        LwAdatok.ItemsSource = list;
-    }
-    private async void BtnTeljesTorol_Clicked(object sender, EventArgs e)
-    {
-        list.Clear();
-        LwAdatok.ItemsSource = list;
-    }
-    private async void BtnBeszur_Clicked(object sender, EventArgs e)
-    {
-        string kivalitem = LwAdatok.SelectedItem.ToString();
-        int poz = list.IndexOf(kivalitem);
-        list.Insert(poz, EtrBe.Text);
-        LwAdatok.ItemsSource = list;
     }
 }

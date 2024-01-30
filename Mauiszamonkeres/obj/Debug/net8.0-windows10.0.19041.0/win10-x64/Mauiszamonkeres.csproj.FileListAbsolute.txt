@@ -171,3 +171,4 @@ C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\obj\Debug\net
 C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\kandologo.scale-100.jpg
+C:\programozas\asztalialkalmazasok\Mauiszamonkeres\Mauiszamonkeres\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Mauiszamonkeres.sourcelink.json

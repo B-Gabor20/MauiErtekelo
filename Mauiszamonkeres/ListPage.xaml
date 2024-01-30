@@ -12,15 +12,13 @@
             <VerticalStackLayout>
                 <Entry
                     x:Name="EtrBe"
-                    MinimumWidthRequest="400"
-                    MaximumWidthRequest="2000"
                     Margin="10"
+                    MinimumWidthRequest="170"
                     />
                 <ListView
                     x:Name="LwAdatok"
-                    MinimumWidthRequest="400"
-                    MaximumWidthRequest="2000"
-                Margin="20"
+                    Margin="20"
+                    MinimumWidthRequest="170"
                     >
         </ListView>
             </VerticalStackLayout>
@@ -31,7 +29,7 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     Clicked="BtnFelvitel_Clicked"
-                    MinimumWidthRequest="150"
+                    MinimumWidthRequest="120"
                     Margin="10"
                     />
                 <Button
@@ -40,7 +38,7 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     Clicked="BtnBeszur_Clicked"
-                    MinimumWidthRequest="150"
+                    MinimumWidthRequest="120"
                     Margin="10"
                     />
                 
@@ -50,7 +48,7 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     Clicked="BtnKijeloltTorol_Clicked"
-                    MinimumWidthRequest="150"
+                    MinimumWidthRequest="120"
                     Margin="10"
                     />
                 <Button
@@ -59,7 +57,7 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     Clicked="BtnTeljesTorol_Clicked"
-                    MinimumWidthRequest="150"
+                    MinimumWidthRequest="120"
                     Margin="10"
                     />
                 
@@ -72,7 +70,6 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="BtnMent_Clicked"
-                MinimumWidthRequest="150"
                 Margin="20"
                 />
             <Button
@@ -81,7 +78,6 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="BtnBetolt_Clicked"
-                MinimumWidthRequest="150"
                 Margin="20"
                 />
         </HorizontalStackLayout>

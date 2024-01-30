@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mauiszamonkeres")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4a2776743b2a18cb0d06817452fa9e8cb765424b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mauiszamonkeres")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mauiszamonkeres")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
